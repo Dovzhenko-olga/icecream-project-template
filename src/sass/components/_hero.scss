@@ -1,0 +1,301 @@
+.hero {
+  background-color: $hero-pink-color;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  @media screen and(min-width: 768px) {
+    padding-top: 0px;
+  }
+}
+.hero-container {
+  position: relative;
+  width: 320px;
+  height: 446px;
+  @media screen and(min-width: 768px) {
+    width: 768px;
+    height: 399px;
+    padding-top: 0px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+    height: 665px;
+  }
+}
+.list-hero {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+}
+.hero-left-part-container {
+  position: absolute;
+  top: 137px;
+  left: 20px;
+  z-index: 10;
+  @media screen and(min-width: 768px) {
+    position: static;
+    margin-top: 102px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-top: 172px;
+  }
+}
+.hero-heading {
+  font-family: titan one;
+  font-weight: 400;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  @media screen and(min-width: 1200px) {
+    margin-left: 59px;
+  }
+  & > .hero-heading-fisrt-part {
+    display: block;
+    width: 170px;
+    font-size: 26px;
+    color: $primary-white-color;
+    line-height: 1.145;
+    @media screen and(min-width: 768px) {
+      width: 277px;
+      font-size: 22px;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 38px;
+    }
+  }
+  & > .hero-heading-two-part {
+    font-size: 48px;
+    color: $primary-passion-color;
+    line-height: 0.955;
+    @media screen and(min-width: 768px) {
+      font-size: 37px;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 52px;
+    }
+  }
+}
+.hero-btn-container {
+  display: flex;
+  margin-top: 20px;
+  @media screen and(min-width: 1200px) {
+    margin-top: 25px;
+    margin-left: 59px;
+  }
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+  cursor: pointer;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  // box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px $hover-passion-button;
+}
+.hero-btn-products {
+  width: 61px;
+  background-color: $primary-passion-color;
+  color: $primary-white-color;
+  margin-right: 9px;
+  @media screen and(min-width:1200px) {
+    width: 104px;
+  }
+}
+.hero-btn-how-made {
+  width: 83px;
+  background-color: $primary-white-color;
+  color: $primary-passion-color;
+  @media screen and(min-width:1200px) {
+    width: 138px;
+  }
+}
+.hero-description-container {
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-top: 56px;
+  }
+}
+.hero-description-thumb-img {
+  width: 124px;
+  @media screen and(min-width: 1200px) {
+    width: 188px;
+    margin-left: 21px;
+  }
+}
+.hero-description-text {
+  width: 114px;
+  font-family: dm sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $primary-white-color;
+  margin-top: 45px;
+  @media screen and(min-width: 1200px) {
+    width: 200px;
+    font-size: 14px;
+    margin-left: 30px;
+  }
+}
+.hero-icon-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: $primary-white-color;
+  border-radius: 50%;
+  margin-top: 7px;
+  @media screen and(min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+.hero-icon-thumb:hover {
+  background-color: transparent;
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px $hover-passion-button;
+}
+.hero-icon-arrow {
+  width: 6px;
+  height: 8px;
+  fill: $primary-passion-color;
+  @media screen and(min-width: 1200px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+.circle {
+  position: absolute;
+  width: 346px;
+  height: 346px;
+  background-color: $title-pink-color;
+  border-radius: 50%;
+  @media screen and(max-width: 767px) {
+    top: 27px;
+    left: 36px;
+  }
+  @media screen and(min-width: 768px) {
+    right: 137px;
+    bottom: 46px;
+    width: 322px;
+    height: 322px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    right: 228px;
+    bottom: 74px;
+  }
+}
+.hero-bg-img {
+  position: absolute;
+  @media screen and(max-width: 767px) {
+    width: 171px;
+    top: 36px;
+    left: 117px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 143px;
+    right: 247px;
+    bottom: 0;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 236px;
+    right: 411px;
+  }
+}
+.hero-right-part {
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+  }
+}
+.hero-info-figures {
+  position: absolute;
+  right: 44px;
+  bottom: 190px;
+  @media screen and(min-width: 1200px) {
+    right: 75px;
+    bottom: 340px;
+  }
+}
+.hero-figures {
+  position: relative;
+  width: 43px;
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.145;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-passion-color;
+  z-index: 100;
+  @media screen and(min-width: 1200px) {
+    width: 74px;
+    font-size: 46px;
+  }
+}
+.hero-figures::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+  z-index: -1;
+  @media screen and(min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    right: -15px;
+  }
+}
+.hero-info {
+  font-family: dm sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $primary-white-color;
+  margin-bottom: 14px;
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 2px;
+    margin-bottom: 18px;
+  }
+}
+.hero-right-part-img-container {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  width: 168px;
+  @media screen and(min-width: 1200px) {
+    width: 293px;
+    right: 70px;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://dovzhenko-olga.github.io/icecream-project-template/",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url /icecream-project-template/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dovzhenko-olga/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Dovzhenko Olga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dovzhenko-olga/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
