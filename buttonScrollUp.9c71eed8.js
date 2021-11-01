@@ -117,34 +117,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../js/modal.js":[function(require,module,exports) {
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+})({"../js/buttonScrollUp.js":[function(require,module,exports) {
+var buttonScrollUp = document.querySelector('.arrow');
+var searchingBlock = document.querySelector('.up');
+buttonScrollUp.addEventListener('click', onButtonScrollUpClick);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+function onButtonScrollUpClick() {
+  window.scrollTo({
+    top: 1,
+    behavior: 'smooth'
+  });
+}
+
+window.onscroll = function () {
+  var scrolled = window.pageYOffset || searchingBlock.scrollTop;
+
+  if (scrolled > 400) {
+    buttonScrollUp.style.display = 'block';
+  } else {
+    buttonScrollUp.style.display = 'none';
   }
-})();
-
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector('[data-modal-open1]'),
-    closeModalBtn: document.querySelector('[data-modal-close1]'),
-    modal: document.querySelector('[data-modal1]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -349,5 +342,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../js/modal.js"], null)
-//# sourceMappingURL=/modal.a33100f4.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../js/buttonScrollUp.js"], null)
+//# sourceMappingURL=/buttonScrollUp.9c71eed8.js.map
